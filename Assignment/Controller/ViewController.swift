@@ -48,8 +48,6 @@ class ViewController: UIViewController {
             totalPage = response.totalResults
             if let movies = response.results
             {
-               // sleep(2)
-               
                 moviesList.append(contentsOf: movies)
                 DispatchQueue.main.async {
                     activityIndicator.stopAnimating()
@@ -65,9 +63,10 @@ class ViewController: UIViewController {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height
 
-        if (offsetY > contentHeight - scrollView.frame.height * 2) && !isFetching {
-            sleep(1)
+        if (offsetY > contentHeight - scrollView.frame.height * 0.96) && !isFetching  {
+            if currentPage != totalPage {
             getData()
+            }
         }
     }
 
@@ -134,21 +133,7 @@ extension ViewController : UITableViewDataSource
         }
     }
     
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-
-
-        if indexPath.row == moviesList.count && !isFetching
-        {
-            self.isFetching = true
-
-          // sleep(2)
-            currentPage += 1
-                getData()
-            }
-        }
-    
-    
+ 
     
     
     }
@@ -164,7 +149,7 @@ extension ViewController : UITableViewDelegate
         }
         else
         {
-            return 50
+            return 65
         }
     }
 }

@@ -9,6 +9,7 @@ import UIKit
 
 class MovieCell: UITableViewCell {
 
+    @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var lblLang: UILabel!
     @IBOutlet weak var lblPopularity: UILabel!
     @IBOutlet weak var lblId: UILabel!
@@ -18,6 +19,13 @@ class MovieCell: UITableViewCell {
         // Initialization code
     }
 
+    
+    override func layoutSubviews() {
+        
+        bgView.layer.cornerRadius = 5
+        super.layoutSubviews()
+        
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

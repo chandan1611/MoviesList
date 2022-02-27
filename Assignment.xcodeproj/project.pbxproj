@@ -70,21 +70,53 @@
 		1774778E27CBA628003CB752 /* Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				177477B527CBEEE9003CB752 /* Network */,
+				177477B427CBEEC4003CB752 /* Controller */,
+				177477B327CBEEBE003CB752 /* View */,
+				177477B227CBEEB6003CB752 /* Model */,
 				1774778F27CBA628003CB752 /* AppDelegate.swift */,
 				1774779127CBA628003CB752 /* SceneDelegate.swift */,
-				1774779327CBA628003CB752 /* ViewController.swift */,
 				1774779527CBA628003CB752 /* Main.storyboard */,
 				1774779827CBA62A003CB752 /* Assets.xcassets */,
 				1774779A27CBA62A003CB752 /* LaunchScreen.storyboard */,
 				1774779D27CBA62A003CB752 /* Info.plist */,
+			);
+			path = Assignment;
+			sourceTree = "<group>";
+		};
+		177477B227CBEEB6003CB752 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				177477AA27CBB776003CB752 /* MoviesModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		177477B327CBEEBE003CB752 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				177477A327CBA756003CB752 /* MovieCell.swift */,
 				177477A427CBA756003CB752 /* MovieCell.xib */,
-				177477AA27CBB776003CB752 /* MoviesModels.swift */,
-				177477AC27CBB8AB003CB752 /* ApiManager.swift */,
 				177477AE27CBC493003CB752 /* LoadMoreCell.swift */,
 				177477AF27CBC494003CB752 /* LoadMoreCell.xib */,
 			);
-			path = Assignment;
+			path = View;
+			sourceTree = "<group>";
+		};
+		177477B427CBEEC4003CB752 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1774779327CBA628003CB752 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		177477B527CBEEE9003CB752 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				177477AC27CBB8AB003CB752 /* ApiManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
