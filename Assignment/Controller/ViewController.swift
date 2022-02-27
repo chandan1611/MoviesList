@@ -65,6 +65,7 @@ class ViewController: UIViewController {
 
         if (offsetY > contentHeight - scrollView.frame.height * 0.96) && !isFetching  {
             if currentPage != totalPage {
+                isFetching = true
             getData()
             }
         }

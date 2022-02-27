@@ -16,7 +16,7 @@
 		177477A527CBA756003CB752 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177477A327CBA756003CB752 /* MovieCell.swift */; };
 		177477A627CBA756003CB752 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177477A427CBA756003CB752 /* MovieCell.xib */; };
 		177477A927CBAB4B003CB752 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 177477A827CBAB4B003CB752 /* Alamofire */; };
-		177477AB27CBB776003CB752 /* MoviesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177477AA27CBB776003CB752 /* MoviesModels.swift */; };
+		177477AB27CBB776003CB752 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177477AA27CBB776003CB752 /* MoviesModel.swift */; };
 		177477AD27CBB8AB003CB752 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177477AC27CBB8AB003CB752 /* ApiManager.swift */; };
 		177477B027CBC494003CB752 /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177477AE27CBC493003CB752 /* LoadMoreCell.swift */; };
 		177477B127CBC494003CB752 /* LoadMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177477AF27CBC494003CB752 /* LoadMoreCell.xib */; };
@@ -33,7 +33,7 @@
 		1774779D27CBA62A003CB752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		177477A327CBA756003CB752 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		177477A427CBA756003CB752 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
-		177477AA27CBB776003CB752 /* MoviesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModels.swift; sourceTree = "<group>"; };
+		177477AA27CBB776003CB752 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
 		177477AC27CBB8AB003CB752 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		177477AE27CBC493003CB752 /* LoadMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCell.swift; sourceTree = "<group>"; };
 		177477AF27CBC494003CB752 /* LoadMoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadMoreCell.xib; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		177477B227CBEEB6003CB752 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				177477AA27CBB776003CB752 /* MoviesModels.swift */,
+				177477AA27CBB776003CB752 /* MoviesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 				177477A527CBA756003CB752 /* MovieCell.swift in Sources */,
 				1774779227CBA628003CB752 /* SceneDelegate.swift in Sources */,
 				177477AD27CBB8AB003CB752 /* ApiManager.swift in Sources */,
-				177477AB27CBB776003CB752 /* MoviesModels.swift in Sources */,
+				177477AB27CBB776003CB752 /* MoviesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
